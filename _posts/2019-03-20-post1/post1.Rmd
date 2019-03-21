@@ -1,0 +1,26 @@
+---
+title: "An example of an interactive 2D plot"
+description: |
+author:
+  - name: Xi Yang
+    url: 
+date: 03-20-2019
+output:
+  distill::distill_article:
+    self_contained: false
+    
+categories:
+  - Data_viz
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<video width="320" height="240" controls>
+  <source src="/Users/BirdieHamster/Desktop/OneDrive - University Of Oregon/UO19Winter/Data_Science_with_R2/Final_project/Distill_blog/Post1.mp4" type="video/mp4">
+</video>
+
+The manipulate interactive plot so far only works from the R-studio end, so this is a screen-shot demo of the interactive 2D plot.
+The xaxis is the statistical power from 0 to 1, yaxis is the probability that the experiment finding is actually true.
+While changing base rate, alpha level and the proportion of experiments that actually found statistically significant results,
+we can see the highest point for the bayesian ratio is when proportion of experiments that found significant results is equal to the statistical power. This shows that in contrast to common belief, higher power does not always guarantee the study findings being more likely to be true.

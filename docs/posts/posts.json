@@ -5,13 +5,64 @@
     "description": "Welcome to our new blog, My Distill Blog. We hope you enjoy \nreading what we have to say!",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Xi Yang",
+        "url": {}
       }
     ],
     "date": "2019-03-20",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-20T22:49:34-07:00"
+    "last_modified": "2019-03-21T00:25:40-07:00"
+  },
+  {
+    "path": "posts/2019-03-20-post1/",
+    "title": "An example of an interactive 2D plot",
+    "description": {},
+    "author": [
+      {
+        "name": "Xi Yang",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-20",
+    "categories": [
+      "Data_viz"
+    ],
+    "preview": {},
+    "last_modified": "2019-03-21T00:24:59-07:00"
+  },
+  {
+    "path": "posts/2019-03-20-post2/",
+    "title": "A colored 3D plot",
+    "description": {},
+    "author": [
+      {
+        "name": "Xi Yang",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-20",
+    "categories": [
+      "Data_viz"
+    ],
+    "preview": "posts/2019-03-20-post2/post2_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2019-03-21T00:23:21-07:00"
+  },
+  {
+    "path": "posts/2019-03-20-post3/",
+    "title": "An example of an interactive 3D plot",
+    "description": {},
+    "author": [
+      {
+        "name": "Xi Yang",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-20",
+    "categories": [
+      "Data_viz"
+    ],
+    "preview": {},
+    "last_modified": "2019-03-21T00:25:08-07:00"
   }
 ]

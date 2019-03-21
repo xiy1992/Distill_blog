@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "785146480",
+    "hash" : "0",
     "id" : "DC082F2E",
-    "lastKnownWriteTime" : 1553147372,
-    "last_content_update" : 1553147372,
+    "lastKnownWriteTime" : 1553151187,
+    "last_content_update" : 1553151187953,
     "path" : "~/Desktop/OneDrive - University Of Oregon/UO19Winter/Data_Science_with_R2/Final_project/Distill_blog/_site.yml",
     "project_path" : "_site.yml",
     "properties" : {
+        "cursorPosition" : "5,7",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

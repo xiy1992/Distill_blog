@@ -19,9 +19,8 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-<title>My Distill Blog: Welcome to My Distill Blog</title>
+<title>My Distill Blog: An example of an interactive 3D plot</title>
 
-<meta property="description" itemprop="description" content="Welcome to our new blog, My Distill Blog. We hope you enjoy &#10;reading what we have to say!"/>
 
 
 <!--  https://schema.org/Article -->
@@ -30,27 +29,25 @@
 <meta name="article:author" content="Xi Yang"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="My Distill Blog: Welcome to My Distill Blog"/>
+<meta property="og:title" content="My Distill Blog: An example of an interactive 3D plot"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Welcome to our new blog, My Distill Blog. We hope you enjoy &#10;reading what we have to say!"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="My Distill Blog"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="My Distill Blog: Welcome to My Distill Blog"/>
-<meta property="twitter:description" content="Welcome to our new blog, My Distill Blog. We hope you enjoy &#10;reading what we have to say!"/>
+<meta property="twitter:title" content="My Distill Blog: An example of an interactive 3D plot"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to My Distill Blog"]},{"type":"character","attributes":{},"value":["Welcome to our new blog, My Distill Blog. We hope you enjoy \nreading what we have to say!"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Xi Yang"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["University of Oregon"]},{"type":"character","attributes":{},"value":["https://uoregon.edu"]}]}]},{"type":"character","attributes":{},"value":["03-20-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["An example of an interactive 3D plot"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Xi Yang"]},{"type":"NULL"}]}]},{"type":"character","attributes":{},"value":["03-20-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["Data_viz"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["post3_files/bowser-1.9.3/bowser.min.js","post3_files/distill-2.2.21/template.v2.js","post3_files/jquery-1.11.3/jquery.min.js","post3_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1280,7 +1277,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to My Distill Blog","description":"Welcome to our new blog, My Distill Blog. We hope you enjoy \nreading what we have to say!","authors":[{"author":"Xi Yang","authorURL":"#","affiliation":"University of Oregon","affiliationURL":"https://uoregon.edu"}],"publishedDate":"2019-03-20T00:00:00.000-07:00","citationText":"Yang, 2019"}
+{"title":"An example of an interactive 3D plot","authors":[{"author":"Xi Yang","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2019-03-20T00:00:00.000-07:00","citationText":"Yang, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1305,18 +1302,22 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to My Distill Blog</h1>
-<p>Welcome to our new blog, My Distill Blog. We hope you enjoy reading what we have to say!</p>
+<h1>An example of an interactive 3D plot</h1>
+
 </div>
 
 <div class="d-byline">
-  Xi Yang  (University of Oregon)<a href="https://uoregon.edu" class="uri">https://uoregon.edu</a>
+  Xi Yang  
   
 <br/>03-20-2019
 </div>
 
 <div class="d-article">
-
+<video width="320" height="240" controls>
+<source src="/Users/BirdieHamster/Desktop/OneDrive - University Of Oregon/UO19Winter/Data_Science_with_R2/Final_project/Distill_blog/Post3.mp4" type="video/mp4">
+</video>
+<p>The manipulate interactive plot so far only works from the R-studio end, so this is a screen-shot demo of the interactive 3D plot. The x-axis is the statistical power; The y axis is the proportion of the experiments found statistically significant results; The z axis is the probability that the experiment finding is actually true (the effect in reality exsits).</p>
+<p>While changing base rate and alpha level, we can see the highest point for the bayesian ratio is when proportion of experiments that found significant results is equal to the statistical power. This shows that in contrast to common belief, higher power does not always guarantee the study findings being more likely to be true.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

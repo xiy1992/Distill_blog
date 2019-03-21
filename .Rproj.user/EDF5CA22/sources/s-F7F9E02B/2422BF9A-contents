@@ -1,0 +1,31 @@
+---
+title: "An example of an interactive 3D plot"
+description: |
+author:
+  - name: Xi Yang
+    url: 
+date: 03-20-2019
+output:
+  distill::distill_article:
+    self_contained: false
+
+categories:
+  - Data_viz
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<video width="320" height="240" controls>
+  <source src="/Users/BirdieHamster/Desktop/OneDrive - University Of Oregon/UO19Winter/Data_Science_with_R2/Final_project/Distill_blog/Post3.mp4" type="video/mp4">
+</video>
+
+The manipulate interactive plot so far only works from the R-studio end, so this is a screen-shot demo of the interactive 3D plot.
+The x-axis is the statistical power;
+The y axis is the proportion of the experiments found statistically significant results;
+The z axis is the probability that the experiment finding is actually true (the effect in reality exsits).
+
+While changing base rate and alpha level,
+we can see the highest point for the bayesian ratio is when proportion of experiments that found significant results is equal to the statistical power. This shows that in contrast to common belief, higher power does not always guarantee the study findings being more likely to be true.
+

@@ -1,0 +1,63 @@
+---
+title: "A colored 3D plot"
+description: |
+author:
+  - name: Xi Yang
+    url: 
+date: 03-20-2019
+output:
+  distill::distill_article:
+    self_contained: false
+    
+categories:
+  - Data_viz
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout = "l-screen"}
+# make a colored 3Dplot with alpha = .05, pH1 = .8
+x<-seq(0, 1, 0.1)
+y<-seq(0, 1, 0.1)
+BayesRatioModelSet <- function(x, beta, alpha=.05, pH1=.8, print = TRUE){
+  a <- dbinom(x*10, 10, prob = alpha) 
+  #a <- p (these results | H0 true)
+  b <- dbinom(x*10, 10, prob = beta)
+  #b <- p (these results | H1 true)
+  c <- b/a*pH1/(1-pH1)
+  #c <- Bayes Theorem odds ratio of H1:H0
+  return(log10(c+1))}
+z = outer(x,y,BayesRatioModelSet)
+# Surface colours corresponding to z-values
+nrz <- nrow(z)
+ncz <- ncol(z)
+jet.colors <- colorRampPalette( c("blue", "green"))
+nbcol <- 100
+color <- jet.colors(nbcol)
+zfacet <- z[-1, -1] + z[-1, -ncz] + z[-nrz, -1] + z[-nrz, -ncz]
+facetcol <- cut(zfacet, nbcol) 
+persp(x, y, z, col = color[facetcol],
+      xlab = "power",
+      ylab = "proportion",
+      zlab = "Log10(BayesRatio+1)",
+      main = "BayesRatioDependingonProportionPowerAlphapH1",
+      theta=30,phi=30,ticktype="detailed",
+      d = 1)
+```
+
+This is an example of a colored 3Dplot with alpha = .05, pH1 = .8. 
+The x-axis is the statistical power;
+The y axis is the proportion of the experiments found statistically significant results;
+The z axis is the probability that the experiment finding is actually true (the effect in reality exsits).
+
+As you can see from the plot, 
+given the alpha and base rate (pH1) assumptions, 
+when power is equal to the proportion of the significant experiments, 
+the probability that the experiment finding is actually true is highest...
+Unlike the common myth, 
+where many people believe that the higher the statistical power, 
+the more likely the significant finding is true.
+
+
